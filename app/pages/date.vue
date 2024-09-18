@@ -5,8 +5,8 @@ let formattedDate = ref();
 
 const updateDate = () => {
   const date = new Date();
-  formattedDate.value = format(date, 'EEEE do MMMM HH:mm:ss');
-  setTimeout(() => updateDate(), 1000);
+  formattedDate.value = format(date, 'EEEE do MMMM');
+  setTimeout(() => updateDate(), 5000);
 }
 
 updateDate();
