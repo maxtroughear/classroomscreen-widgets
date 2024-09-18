@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import {format} from "date-fns";
-const date = new Date();
-const formattedDate = format(date, 'EEEE do MMMM')
+
+let formattedDate = ref();
+
+const updateDate = () => {
+  const date = new Date();
+  formattedDate.value = format(date, 'EEEE do MMMM HH:mm:ss');
+  setTimeout(() => updateDate(), 1000);
+}
+
+updateDate();
 </script>
 
 <template>
