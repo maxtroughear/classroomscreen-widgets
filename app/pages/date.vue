@@ -13,9 +13,11 @@ updateDate();
 </script>
 
 <template>
-  <div>
-    <h1>{{ formattedDate }}</h1>
-  </div>
+  <ClientOnly>
+    <div>
+      <h1>{{ formattedDate }}</h1>
+    </div>
+  </ClientOnly>
 </template>
 
 <style scoped>
