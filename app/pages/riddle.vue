@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const {data, status, error, refresh, clear} = useFetch("https://riddles-api.vercel.app/random")
+const {data, status, error, refresh, clear} = useFetch("https://riddles-api-eight.vercel.app/logic")
 
 const answerShown = ref(false);
 const questionReady = computed(() => {
